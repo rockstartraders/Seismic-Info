@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="/IMG/Equake_.png">
+    <link rel="stylesheet" href="/CSS/materialize.min.css">
+    <link rel="stylesheet" href="/CSS/override.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css"/>   
+    <link rel="stylesheet" href="/CSS/sweetalert2.min.css">
+    <link rel="stylesheet" href="/LEAFLET/leaflet.css">
+    <script src="/LEAFLET/leaflet.js"></script>
+    <title>Seismic-Info.</title>
+
+
+</head>
+<body onload = "equake()">
+
+    <!-- onload = "lindol()" -->
+
+   <!-- Section for side Navigarion and drawer -->    
+
+    <ul id="slide-out" class="sidenav">   
+
+    
+       
+        <i class="fa-solid fa-xmark"></i>   
+        <br><br>        
+        <a href="https://jamespaulespena.netlify.app/" target="_blank"><i class="fa-solid fa-rectangle-terminal" title="Visit my Portfolio."></i></a>
+        <a href="https://github.com/rockstartraders" target="_blank" title="View me via GITHUB."><i class="fa-brands fa-github"></i></a>
+        <a href="/index.html"><img class="responsive-img" src="/IMG/Equake_.png"  title="Seismic-Info. by James Paul Espeña"></i></a>             
+        <a href="https://earthquake.usgs.gov/earthquakes/feed/" target="_blank" id="usgspowered" >Powered By USGS API</a>          
+        <br><br>
+        <div id="info_container"></div>
+        
+      
+    </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fa-solid fa-bars"></i></a>          
+
+    <!-- End of Section for side Navigarion and drawer -->   
+
+
+    <!-- Loader  -->
+    <span class="loader"><p id="loadingtxt">Loading Data</p></span>
+
+    <!--Loader 2 for maps-->
+    <span class="loader2"><p id="loadingtxt2">Adding Map</p></span>
+
+
+    <!--Map-->
+    <div id="map"></div>
+
+
+
+
+
+    <script src="/JS/moment.min.js"></script>
+    <script src="/JS/materialize.min.js"></script>     
+    <script src="/JS/sweetalert2.min.js"></script> 
+    <script src="/JS/main.js"></script>
+
+</body>
+</html>

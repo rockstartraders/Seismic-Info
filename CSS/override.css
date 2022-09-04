@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+
+body{
+ background-color: #37474f ;
+}
+
+.sidenav{
+  width: 35rem;
+  background-color: #fafafa !important;
+  
+}
+
+.fa-bars{
+    font-size: 1.9rem;
+    margin-left: 8px;
+    margin-top: 8px;
+    /* color: #183153; */
+    color: white;
+    visibility: hidden;
+
+    position: fixed;
+    z-index: 999;
+
+    animation: horizontal-shaking 0.5s;
+    animation-iteration-count: infinite; 
+
+}
+
+.fa-xmark{
+    font-size: 1.3rem;
+    margin-right: 10px;
+    margin-top: 8px;       
+    color: #626262;
+    float: right;   
+    
+}
+
+.fa-bug{
+    font-size: 5rem !important;
+    margin-bottom: 1rem;
+    color: #ee6e73;
+
+    animation: horizontal-shaking 0.5s;
+    animation-iteration-count: infinite; 
+}
+
+.fa-github{
+  float: right;
+  margin-right: 7rem;
+  font-size: 2rem;
+  margin-top: 3rem;
+  color: #6e5494;
+}
+
+.fa-rectangle-terminal{
+  float: left;
+  margin-left: 7rem;
+  font-size: 2rem;
+  margin-top: 3rem;
+  color: #333;
+} 
+
+
+#info_divider{
+    margin-top: -6rem;
+}
+
+
+
+#quake_title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    letter-spacing: .1rem;
+    margin-right: .8rem;
+    text-align: right;
+    color: #626262;
+    font-size:larger;
+   
+    
+}
+
+#quake_time{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    margin-right: .8rem;
+    text-align: right;
+    margin-top: -1rem;
+}
+
+#quake_kmdepth{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    margin-right: .8rem;
+    text-align: right;
+    margin-top: -1rem;
+}
+
+#quake_coord{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    margin-right: .8rem;
+    text-align: right;
+    margin-top: -1rem;
+}
+
+
+.responsive-img{
+    margin-top: .5rem;
+    margin-bottom: -2rem;
+    height: 5rem !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Sweetalert2 */
+
+.swal2-title{    
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    font-size: 1.5rem !important;
+    text-shadow: 5px -1px 2px rgba(98,98,98,0.25);
+
+  
+}
+
+.swal2-deny {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    background-color: #ee6e73;
+}
+
+
+
+
+#usgspowered{
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-align:center;
+    display:block;
+    margin-top: 2.5rem;   
+    margin-bottom: -2.5rem;
+    color: #323f46;
+    font-size: 1rem;
+    text-shadow: 5px -1px 2px rgba(98,98,98,0.25);
+
+    /* animation: shake 0.5s;
+    animation-iteration-count: infinite; */
+
+    animation: horizontal-shaking 0.5s;
+    animation-iteration-count: infinite; 
+
+   
+}
+
+/* Shake animation  */
+
+@keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+}
+
+
+
+
+/* magnitude alerts  */
+
+#magnitude_danger{
+    margin-left: .8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: .1rem;    
+    color: #ae1a1a;
+    font-size: 5rem;
+    margin-top: -5.5rem;
+    text-shadow: 3px 2px 2px rgba(98,98,98,0.98);
+    
+}
+
+#magnitude_red{
+    margin-left: .8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: .1rem;    
+    color: #ee6e73;
+    font-size: 5rem;
+    margin-top: -5.5rem;
+    text-shadow: 3px 2px 2px rgba(98,98,98,0.98);
+    
+}
+
+
+#magnitude_green{
+    margin-left: .8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: .1rem;    
+    color: #43a047;
+    font-size: 5rem;
+    margin-top: -5.5rem;
+    text-shadow: 3px 2px 2px rgba(95,95,95,0.90);
+    
+    
+}
+
+
+#magnitude_yellow{
+    margin-left: .8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: .1rem;    
+    color: #FFC300 ;
+    font-size: 5rem;
+    margin-top: -5.5rem;
+    text-shadow: 3px 2px 2px rgba(98,98,98,0.98);
+    
+}
+
+/* End of magnitude alerts  */
+
+
+
+
+
+
+
+
+/* Loader css */
+
+.loader { 
+    display:none;   
+    position: absolute; 
+    
+    top: 50%; right: 50%;
+    transform: translate(50%,-50%);
+   
+    width: 85px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#FFF 50px, transparent 0),
+                      linear-gradient(#FFF 50px, transparent 0),
+                      linear-gradient(#FFF 50px, transparent 0),
+                      linear-gradient(#FFF 50px, transparent 0),
+                      linear-gradient(#FFF 50px, transparent 0),
+                      linear-gradient(#FFF 50px, transparent 0);
+    background-position: 0px center, 15px center, 30px center, 45px center, 60px center, 75px center, 90px center;
+    animation: rikSpikeRoll 0.65s linear infinite alternate;
+  }
+@keyframes rikSpikeRoll {
+  0% { background-size: 10px 3px;}
+  16% { background-size: 10px 50px, 10px 3px, 10px 3px, 10px 3px, 10px 3px, 10px 3px}
+  33% { background-size: 10px 30px, 10px 50px, 10px 3px, 10px 3px, 10px 3px, 10px 3px}
+  50% { background-size: 10px 10px, 10px 30px, 10px 50px, 10px 3px, 10px 3px, 10px 3px}
+  66% { background-size: 10px 3px, 10px 10px, 10px 30px, 10px 50px, 10px 3px, 10px 3px}
+  83% { background-size: 10px 3px, 10px 3px,  10px 10px, 10px 30px, 10px 50px, 10px 3px}
+  100% { background-size: 10px 3px, 10px 3px, 10px 3px,  10px 10px, 10px 30px, 10px 50px}
+}
+    
+#loadingtxt{
+   margin-top: 3.4rem; 
+   font-size: 1.1rem;
+   margin-left: -1rem;
+   font-family: 'Poppins', sans-serif;
+   color: white;   
+   letter-spacing: .1rem;
+   text-transform:capitalize;
+   white-space: nowrap;
+   
+   
+}
+
+
+/* Loader 2 before maps */
+
+.loader2 {
+    visibility:hidden;
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin: 20px auto;
+    box-sizing: border-box;
+    position: relative;
+   
+    
+    
+  }
+  .loader2::after {
+    content: '';  
+    box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    border-radius: 50% 50% 0;
+    border: 15px solid #FFF;
+    transform: rotate(45deg) translate(0, 0);
+    box-sizing: border-box;
+    animation: animMarker 0.4s ease-in-out infinite alternate;
+    top: 20.5rem; right: 50%;
+    
+    
+  }
+  .loader2::before {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 790%;
+    width: 50px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.7);
+    animation: animShadow 0.4s ease-in-out infinite alternate;
+    
+  }
+  
+  @keyframes animMarker {
+    0% {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    100% {
+      transform: rotate(45deg) translate(-5px, -5px);
+    }
+  }
+  
+  @keyframes animShadow {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+      
+  #loadingtxt2{
+   padding-top: 26.5rem; 
+   font-size: 1.1rem;
+   margin-left: -2rem;
+   font-family: 'Poppins', sans-serif;
+   color: white;   
+   letter-spacing: .1rem;
+   text-transform:capitalize;
+   white-space: nowrap;
+
+ 
+  }
+
+
+#map {
+    position: absolute;     
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* Leaflet CSS */
+
+.leaflet-control-zoom-in, .leaflet-control-zoom-out, .leaflet-top  {
+    display: none !important;
+}
+
+.leaflet-control-attribution, .leaflet-control{
+  visibility: hidden;
+
+  /* Free to remove Leaflet attribution as per https://groups.google.com/g/leaflet-js/c/fA6M7fbchOs/m/JTNVhqdc7JcJ */
+} 
+
+
+/* This is for the circle indicator*/
+
+#popup_place{
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  color: #626262;
+  text-shadow: 3px 2px 2px rgba(185, 184, 184, 0.9);
+
+}
+
+#popup_magnitude{
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  margin-top: -1rem;
+  color: #626262;
+  font-size: 1.2rem;
+
+}
+
+#popup_depth{
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  margin-top: -1.5rem;
+  color: #626262;
+  font-size: 1rem;
+} 
+
+#popup_time{
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: .1rem;
+  font-weight: 600;
+  margin-top: -1.5rem;
+  color: #626262;
+  font-size: 1rem;
+}
+
+#usgs_link{
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: .1rem;
+  font-weight: 600;   
+  /* color: #626262; */
+  font-size: 1rem; 
+  text-transform: uppercase;
+}
+
+
+
+/* Media Query */
+
+
+@media only screen and (max-width: 600px) {
+
+    .sidenav{
+        width: 100%;
+      }
+
+      .loader2::before {
+        display: none;       
+        
+      }
+
+      #loadingtxt2{
+        padding-top: 25rem;       
+      
+       }
+
+   
+  }
+
+
+  /* Tablets  */
+  @media (max-width:960px){
+    
+    .sidenav{
+        width: 100%;
+     }
+    
+     .loader2::before {
+        display: none;
+        
+        
+      }
+
+      #loadingtxt2{
+        padding-top: 25rem;       
+      
+       }
+   
+
+  }
